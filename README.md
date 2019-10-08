@@ -22,7 +22,7 @@ Lehetőséget nyújt egy étterem ételeinek a listázására, keresésére, lé
 
 ## Nem funkcionális követelmények
 - Igényes felület
-- Jelszóval védett felület, kódolt jelszó tárolás
+- Jelszavas azonosítás, kódolt jelszó tárolása
 
 ## Szakterületi fogalomjegyzék
 - Vezető pincér: A pincérek főnöke, ő felügyel/tanítja a pincéreket.
