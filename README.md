@@ -1,5 +1,5 @@
 # Éttermi rendszer
-Lehetőséget nyújt egy étterem ételeinek a listázására, keresésére, létrehozására, módosítására, törlésére.
+Lehetőséget nyújt egy étterem ételei közüli böngészésre, valamint az ételekkel kapcsolatos információ szerzésre.
 
 ## Funcionális követelmények
 - Ételek listázása
