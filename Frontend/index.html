@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Az én honlapom</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Ajánlatok</h1>
+        <li v-for="food in foods[0]">
+            <a>{{ food.name }}</a>
+            <hr>
+        </li>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                foods: []
+            },
+            methods: {
+                load: function() {
+                    /*for(i = 0; i < 2; i++)
+                    {
+                        fetch("http://localhost:8080/food/id/" + (i+1))
+                            .then(x => x.json())
+                            .then(x => this.foods.push(x))
+                    }*/
+                    fetch("http://localhost:8080/food")
+                        .then(x => x.json())
+                        .then(x => this.foods.push(x))
+
+                }
+            },
+            mounted: function() {
+                this.load()
+            }
+        })
+    </script>
+</body>

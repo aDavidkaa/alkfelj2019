@@ -1,0 +1,5 @@
+INSERT INTO user (username, password, role, created_at, updated_at) VALUES ('David', 'admin', 'ROLE_BOSS', '2019-10-11 16:50:23', '2019-10-11 16:50:23');
+INSERT INTO user (username, password, role, created_at, updated_at) VALUES ('Simon', 'asd123', 'ROLE_GUEST', '2019-10-09 12:33:53', '2019-10-09 12:33:53');
+
+INSERT INTO food (name, description, calories, ingredients, status, created_at, updated_at, created_by_id, updated_by_id) VALUES ('Kelkáposzta főzelék', 'Ez egy főzelék, melyben kelkáposzta, burgonya található főleg és fasírtal tálaljuk.', 247, 'olaj, vöröshagyma, fokhagyma, kelkáposzta, burgonya, só, bors, kömény, liszt, fűszer', 'STATUS_PROCESSING', '2019-10-09 12:33:53', '2019-10-09 12:33:53', 1, 1);
+INSERT INTO food (name, description, calories, ingredients, status, created_at, updated_at, created_by_id, updated_by_id) VALUES ('Borsos tokány szarvacska tésztával', 'Ez egy tészta étel, tokánnyal a tetején.', 401, 'sertéstarja, vöröshagyma, paprika, paradicsom, szalonna, étolaj, feketebors, tészta, só, olaj', 'STATUS_PROCESSING', '2019-10-09 12:33:53', '2019-10-09 12:33:53', 1, 1);
