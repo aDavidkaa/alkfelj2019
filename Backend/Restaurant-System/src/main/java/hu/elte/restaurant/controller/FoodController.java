@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("food")
+@RequestMapping("foods")
 public class FoodController
 {
     @Autowired
@@ -20,14 +20,14 @@ public class FoodController
     @Autowired
     private UserRepository userRepository;
 
-    @CrossOrigin
+    //@CrossOrigin
     @GetMapping("")
     public ResponseEntity<Iterable<Food>> getAll()
     {
         return new ResponseEntity<>(foodRepository.findAll(), HttpStatus.OK);
     }
 
-    @CrossOrigin
+    //@CrossOrigin
     @GetMapping("/id/{id}")
     public ResponseEntity<Food> get(@PathVariable Long id)
     {

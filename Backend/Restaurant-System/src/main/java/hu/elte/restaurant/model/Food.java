@@ -9,9 +9,10 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
-@Table(name = "food")
+@Table(name = "foods")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -30,9 +31,6 @@ public class Food
 
     @Column(nullable = false)
     private Integer calories;
-
-    @Column(nullable = false)
-    private String ingredients;
 
     public enum Status
     {
@@ -58,6 +56,9 @@ public class Food
     @JoinColumn(updatable = false, nullable = false)
     @ManyToOne(targetEntity = User.class)
     private User updatedBy;
+    
+    @OneToMany
+    private List<Ingredient> ingredients;
 
     public long getId()
     {
