@@ -40,3 +40,42 @@ Lehetőséget nyújt egy étterem ételei közüli böngészésre, információ 
 
 ## Táblák kapcsolati UML diagramja
 ![UML](http://www.kepfeltoltes.eu/images/2019/11/07/168uml.png)
+ ------ 
+ ### Alkalmazott könyvtárstruktúra bemutatása
+ 
+A projektben a hu.elte.hu könvtárban találhatóak meg az alap könyvrátak
+
+    - controller 
+         - FoodController
+         - IngredientController
+         - OrderController
+         - UserController
+         
+A kontrollerek leírják a http requestekre történő válaszokat és egy endpoint hívásakor adott requestrekre a válasz adják vissza
+            
+    - model
+        - Food
+        - Ingredient
+        - Order
+        - User
+        
+Modell leírja a táblák kinézetét (milyen oszlopokból áll, és azoknak milyen típusaik vannak, továbbá, hogyan kapcsolódnak egymáshoz)
+
+    - resporitory
+        - FoodRepository
+        - IngredientRepository
+        - OrderRepository
+        - UserRepository
+        
+A Repositoryk leírják, hogy a modelleknek milyen tulajdonságaik vannak,, lényegében, hogy milyen lekérdezéseket végezhetünk a táblákon(modelleken)
+
+    - security
+        - AuthenticatedUser
+        - CustomBasicAuthenticationEntryPoint
+        - MyUserDetailsService
+        - WebSecurityConfig
+Authentikálja a usert, a neki megfelelő jogosultságot adva. Megjegyzi automatikusan a tokent, amelyel nem kell mindig bejelentkeznünk, csak akkor ha ujraindítuk a projektet vagy a böngészőt
+### Fejleszői környezet bemutatása, beállítása használt technológiák
+A projektben spring boot technológiát használunk.
+
+    
