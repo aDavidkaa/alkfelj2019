@@ -77,5 +77,41 @@ A Repositoryk leírják, hogy a modelleknek milyen tulajdonságaik vannak,, lén
 Authentikálja a usert, a neki megfelelő jogosultságot adva. Megjegyzi automatikusan a tokent, amelyel nem kell mindig bejelentkeznünk, csak akkor ha ujraindítuk a projektet vagy a böngészőt
 ### Fejleszői környezet bemutatása, beállítása használt technológiák
 A projektben spring boot technológiát használunk.
+### Végpont tervek és leírások
+localhost:8080/ linkkel bejelentkezés után a következőket érhetjük el
 
+- FoodControlles EndPoints
+
+    - /foods felsorolja az össze etélet ami az adatbázisban található
+    - /id/{id} az {id} egy étel azonosító. Ez alapján vissza adja a kért ételt minden tulajdonságával
+    - /{name} a {name} egy étel neve. Ez alapján vissza adja az ételt minden tulajdonságával
+    - /createdby/{id} az {id} egy User id, ami vissza adja a az adott felhasználó által hozzáadott ételeket
+    - továbbá meg van valósítva a Put request is, ami egy új ételt ad az adatbázishoz
+    - tervek: 
+        - Delete request megvalósítása
+        - további szükséges endpointok megvalósítása, amelyek a projekt megvalósításkor még szükségesnek látszanak
+        
+- IngredientController EndPoints
     
+    - /ingredients felsorolja az összes ingredientet
+    - tervek
+        - delete http request endpoint megvalósítás
+        - Put -//-
+        - Post -//-
+        - további szükséges endpointok megvalósítása, amelyek a projekt megvalósításkor még szükségesnek látszanak
+- OrderController endpoints
+    - /orders kilistázza az összes rendelést
+    - Put request meg van valósítva
+    - tervek
+       - delete http request endpoint megvalósítás
+       - Delete -//-
+       - Post -//-
+       - további szükséges endpointok megvalósítása, amelyek a projekt megvalósításkor még szükségesnek látszanak  
+- UserContorller endpoints
+    - /users kilistázza az össze adatbázisban lévő felhasználót
+    -  meg van valósítva a Put request is, ami egy új felhasználót ad az adatbázishoz
+    - tervek
+        - delete http request endpoint megvalósítás
+        - Delete -//-
+        - Post -//-
+        - további szükséges endpointok megvalósítása, amelyek a projekt megvalósításkor még szükségesnek látszanak  
