@@ -34,3 +34,9 @@ Lehetőséget nyújt egy étterem ételei közüli böngészésre, információ 
 - Vendég: Az étterem ételei közül válogathat, információt szerezhet, valamint ételt rendelhet.
 - Fő pincér: Az oldalon lévő ételek információ tartalmáért felelős.
 - Étterem vezető: Az egész étterem felügyelője, az alkalmazottakat felügyeli.
+-----
+## Szekvenciadiagram az ételekhez
+![szekvencia](http://www.kepfeltoltes.eu/images/2019/11/07/687diagram.png)
+
+## Táblák kapcsolati UML diagramja
+![UML](http://www.kepfeltoltes.eu/images/2019/11/07/168uml.png)
