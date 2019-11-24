@@ -32,14 +32,9 @@ public class Food
     @Column(nullable = false)
     private Integer calories;
 
-    public enum Status
-    {
-        STATUS_PROCESSING, STATUS_VERIFIED
-    }
-
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
-    private Status status;
+    private FoodStatus status;
 
     @Column(updatable = false, nullable = false)
     @CreationTimestamp
@@ -50,18 +45,14 @@ public class Food
     private LocalDateTime updatedAt;
 
     @JoinColumn(updatable = false, nullable = false)
-    @ManyToOne(targetEntity = User.class)
+    @ManyToOne(fetch =FetchType.EAGER, targetEntity = User.class)
     private User createdBy;
 
     @JoinColumn(updatable = false, nullable = false)
-    @ManyToOne(targetEntity = User.class)
+    @ManyToOne(fetch =FetchType.EAGER,targetEntity = User.class)
     private User updatedBy;
-    
-    @OneToMany
-    private List<Ingredient> ingredients;
 
-    public long getId()
-    {
-        return id;
-    }
+    @ManyToMany(fetch =FetchType.EAGER, targetEntity = Ingredient.class)
+    private List<Ingredient> ingredient;
+
 }

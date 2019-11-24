@@ -22,23 +22,18 @@ public class Order
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    /*@Column(nullable = false)
-    private String orderer;*/
-
     @Column(nullable = false)
     private String destination;
 
     @Column(nullable = false)
     private String description;
 
-    /*@Column(nullable = false)
-    private String foods;*/
 
     @Column(updatable = false, nullable = false)
     @CreationTimestamp
     private LocalDateTime createdAt;
     
-    @OneToMany
+    @OneToMany(targetEntity = Food.class)
     private List<Food> foods;
     
     @OneToOne

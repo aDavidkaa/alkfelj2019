@@ -3,6 +3,7 @@ package hu.elte.restaurant.controller;
 import hu.elte.restaurant.model.Food;
 import hu.elte.restaurant.model.User;
 import hu.elte.restaurant.repository.UserRepository;
+import hu.elte.restaurant.security.AuthenticatedUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,17 +20,16 @@ public class UserController
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private AuthenticatedUser authenticatedUser;
+
     @GetMapping("")
-    public ResponseEntity<Iterable<User>> All()
-    {
+    public ResponseEntity<Iterable<User>> getAll(){
         return new ResponseEntity(userRepository.findAll(), HttpStatus.OK);
     }
-    
-    @PutMapping("")
-    public ResponseEntity<User> create(@RequestBody User entity)
-    {
-        userRepository.save(entity);
-        return new ResponseEntity(userRepository.findById(entity.getId()), HttpStatus.OK) ;
-
+    @GetMapping("/logoff")
+    public ResponseEntity logoff() {
+        authenticatedUser.setUser(null);
+        return ResponseEntity.ok(0);
     }
 }

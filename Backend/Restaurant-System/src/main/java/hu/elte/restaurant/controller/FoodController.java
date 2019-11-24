@@ -16,59 +16,54 @@ public class FoodController
 {
     @Autowired
     private FoodRepository foodRepository;
-
     @Autowired
     private UserRepository userRepository;
 
-    //@CrossOrigin
     @GetMapping("")
-    public ResponseEntity<Iterable<Food>> getAll()
-    {
-        return new ResponseEntity<>(foodRepository.findAll(), HttpStatus.OK);
+    public ResponseEntity<Iterable<Food>> getAll(){
+        return new ResponseEntity(foodRepository.findAll(), HttpStatus.OK);
     }
 
-    //@CrossOrigin
-    @GetMapping("/id/{id}")
-    public ResponseEntity<Food> get(@PathVariable Long id)
-    {
-        return new ResponseEntity(foodRepository.findById(id), HttpStatus.OK);
-    }
-
-    @GetMapping("/name/{name}")
-    public ResponseEntity<Iterable<Food>> getByName(@PathVariable String name)
-    {
-        return new ResponseEntity(foodRepository.findByNameContainingIgnoreCase(name), HttpStatus.OK);
-    }
-
-    /*@PostMapping("")
-    public ResponseEntity<Food> update(@RequestBody Food entity)
-    {
-        Optional<Food> baseEntity = foodRepository.findById(entity.);
-
-        if(baseEntity.isPresent())
-        {
-            foodRepository.save(entity);
-            return new ResponseEntity(foodRepository.findById(entity.getId()), HttpStatus.OK) ;
+    @GetMapping("/{id}")
+    public ResponseEntity<Food> get(@PathVariable Long id){
+        Optional<Food> issue = foodRepository.findById(id);
+        if (!issue.isPresent()) {
+            return ResponseEntity.notFound().build();
         }
+        return ResponseEntity.ok(issue.get());
+    }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<Food> update(@PathVariable Long id, @RequestBody Food food) {
+        Optional<Food> oFood = foodRepository.findById(id);
+        if (oFood.isPresent()) {
+            food.setId(id);
+            return ResponseEntity.ok(foodRepository.save(food));
+        }
         return ResponseEntity.notFound().build();
-    }*/
+    }
+
+    @PostMapping("")
+    public ResponseEntity<Food> post(@RequestBody Food food) {
+        return ResponseEntity.ok(foodRepository.save(food));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Food> delete(@PathVariable Long id) {
+        Optional<Food> food = foodRepository.findById(id);
+        if (!food.isPresent()) {
+            return ResponseEntity.notFound().build();
+        }
+        foodRepository.deleteById(id);
+        return ResponseEntity.ok().build();
+    }
 
     @GetMapping("createdby/{id}")
-    public ResponseEntity<Food> getByCreatedUser(@PathVariable Long id)
-    {
+    public ResponseEntity<Food> getByCreatedUser(@PathVariable Long id){
         return new ResponseEntity(
                 foodRepository.findAllByCreatedBy(
                         userRepository.findById(id).get()
                 ),
-                HttpStatus.OK);
-    }
-
-    @PutMapping("")
-    public ResponseEntity<Food> create(@RequestBody Food entity)
-    {
-        foodRepository.save(entity);
-        return new ResponseEntity(foodRepository.findById(entity.getId()), HttpStatus.OK) ;
-
+        HttpStatus.OK);
     }
 }
