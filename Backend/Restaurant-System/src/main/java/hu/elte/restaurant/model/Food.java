@@ -9,9 +9,10 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
-@Table(name = "food")
+@Table(name = "foods")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -32,16 +33,8 @@ public class Food
     private Integer calories;
 
     @Column(nullable = false)
-    private String ingredients;
-
-    public enum Status
-    {
-        STATUS_PROCESSING, STATUS_VERIFIED
-    }
-
-    @Column(nullable = false)
     @Enumerated(EnumType.STRING)
-    private Status status;
+    private FoodStatus status;
 
     @Column(updatable = false, nullable = false)
     @CreationTimestamp
@@ -52,15 +45,14 @@ public class Food
     private LocalDateTime updatedAt;
 
     @JoinColumn(updatable = false, nullable = false)
-    @ManyToOne(targetEntity = User.class)
+    @ManyToOne(fetch =FetchType.EAGER, targetEntity = User.class)
     private User createdBy;
 
     @JoinColumn(updatable = false, nullable = false)
-    @ManyToOne(targetEntity = User.class)
+    @ManyToOne(fetch =FetchType.EAGER,targetEntity = User.class)
     private User updatedBy;
 
-    public long getId()
-    {
-        return id;
-    }
+    @ManyToMany(fetch =FetchType.EAGER, targetEntity = Ingredient.class)
+    private List<Ingredient> ingredient;
+
 }

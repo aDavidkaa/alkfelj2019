@@ -8,9 +8,10 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
-@Table(name = "order")
+@Table(name = "orders")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -22,18 +23,19 @@ public class Order
     private long id;
 
     @Column(nullable = false)
-    private String orderer;
-
-    @Column(nullable = false)
     private String destination;
 
     @Column(nullable = false)
     private String description;
 
-    @Column(nullable = false)
-    private String foods;
 
     @Column(updatable = false, nullable = false)
     @CreationTimestamp
     private LocalDateTime createdAt;
+    
+    @OneToMany(targetEntity = Food.class)
+    private List<Food> foods;
+    
+    @OneToOne
+    private User orderer;
 }
