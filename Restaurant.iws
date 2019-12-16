@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="090505c8-fe2d-4d86-bf29-c3999659be5b" name="Default Changelist" comment="angular works">
+      <change afterPath="$PROJECT_DIR$/Restaurant/src/app/foods/foods.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurant/src/app/foods/foods.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurant/src/app/foods/foods.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurant/src/app/foods/foods.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurant/src/app/order/order.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurant/src/app/order/order.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurant/src/app/order/order.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurant/src/app/order/order.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restaurant/src/app/routing/routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant/src/styles.css" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Restaurant" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1V3ZBFrta8WgsvF7pNgRU8xVSXJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../OraiAlkFejl" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="RestaurantApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Restaurant" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hu.elte.restaurant.RestaurantApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="090505c8-fe2d-4d86-bf29-c3999659be5b" name="Default Changelist" comment="" />
+      <created>1576483601579</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576483601579</updated>
+      <workItem from="1576483606159" duration="6573000" />
+      <workItem from="1576524349317" duration="1304000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="angular works" />
+    <option name="LAST_COMMIT_MESSAGE" value="angular works" />
+  </component>
+</project>
