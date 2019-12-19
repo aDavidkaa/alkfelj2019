@@ -133,3 +133,9 @@ localhost:8080/ linkkel bejelentkezés után a következőket érhetjük el
     - A listában az adott étel mellett megjelenik egy törlés gomb, azt lenyomva az adott elem törlődik.
  - Felhasználó regisztrálása:
     - A megadott rublikákba be kell írni a felhasználónevet / jelszót, majd le kell nyomni a "regisztráció" gombot.
+ - Felhasználó törlése:
+    - A listában az adott felhasználó mellett megjelenik egy törlés gomb, azt lenyomva az adott felhasználó törlődik.
+ - Rendelés hozzáadása:
+    - A megadott rublikába be kell írni a rendeléshez szükséges adatokat, majd a "beküldés" gombot lenyomva bekerül az adatbázisba a rendelés.
+ - Rendelés törlése:
+    - A listában az adott rendelés mellett megjelenik egy törlés gomb, azt lenyomva az adott rendelés törlődik.
