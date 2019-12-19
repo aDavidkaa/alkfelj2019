@@ -122,3 +122,6 @@ localhost:8080/ linkkel bejelentkezés után a következőket érhetjük el
      - Regisztrált felhasználók listázása, törlése, módosítása.
      - Új felhasználó regisztrálása.
      - Rendelések listázása, hozzáadása, törlése, módosítása.
+
+## Étel hozzáadás folyamata
+ - Az "ételek" menüben hozzáadhatunk a listához egy általunk kiválasztott ételt, látható is, hogy milyen adatokat kell kitölteni, ha ki lett töltve, akkor a "beküldés" gomb lenyomásával hozzáadja POST-tal az adatbázishoz az új elemet és az meg is jelenik a listában egyből.
