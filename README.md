@@ -116,7 +116,7 @@ localhost:8080/ linkkel bejelentkezés után a következőket érhetjük el
         - Post -//-
         - további szükséges endpointok megvalósítása, amelyek a projekt megvalósításkor még szükségesnek látszanak  
 ------
-- Kliensoldali szolgáltatások
+## Kliensoldali szolgáltatások
      - Böngészés a menüpontok között (Ételek, Rendelések, Regisztráció, Felhasználók).
      - Az étterem adatbázisában található ételek listázása, hozzáadása, törlése, módosítása.
      - Regisztrált felhasználók listázása, törlése, módosítása.
