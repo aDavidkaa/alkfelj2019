@@ -128,8 +128,8 @@ localhost:8080/ linkkel bejelentkezés után a következőket érhetjük el
  
 ## Felhasználói dokumentáció
  - Étel hozzáadása:
-  - A megadott rublikákba be kell írni az ételhez szükséges adatokat, majd a "beküldés" gombot lenyomva bekerül az adatbázisba az adat.
+    - A megadott rublikákba be kell írni az ételhez szükséges adatokat, majd a "beküldés" gombot lenyomva bekerül az adatbázisba az adat.
  - Étel törlése:
-  - A listában az adott étel mellett megjelenik egy törlés gomb, azt lenyomva az adott elem törlődik.
+    - A listában az adott étel mellett megjelenik egy törlés gomb, azt lenyomva az adott elem törlődik.
  - Felhasználó regisztrálása:
-  - A megadott rublikákba be kell írni a felhasználónevet / jelszót, majd le kell nyomni a "regisztráció" gombot.
+    - A megadott rublikákba be kell írni a felhasználónevet / jelszót, majd le kell nyomni a "regisztráció" gombot.
