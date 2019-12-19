@@ -115,3 +115,6 @@ localhost:8080/ linkkel bejelentkezés után a következőket érhetjük el
         - Delete -//-
         - Post -//-
         - további szükséges endpointok megvalósítása, amelyek a projekt megvalósításkor még szükségesnek látszanak  
+------
+- Kliensoldali szolgáltatások
+     - Teszt
